@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Thadeus - Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cv-container {
+            max-width: 800px;
+            margin: 100px auto 50px;
+            padding: 0 2rem;
+        }
+        .cv-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .cv-section {
+            margin-bottom: 2rem;
+        }
+        .cv-section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            position: fixed;
+            top: 100px;
+            left: 2rem;
+            z-index: 1000;
+        }
+        @media print {
+            .back-btn, .navbar { display: none; }
+            .cv-container { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Personal Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Back to Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="index.html" class="btn btn-secondary back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <main class="cv-container">
+        <div class="glass-card">
+            <div class="cv-header">
+                <h1>Ryan Thadeus</h1>
+                <p class="hero-subtitle ">Computer Science Student</p>
+                <div class="contact-details" style="justify-content: center; gap: 2rem; margin-top: 1rem;">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ryanthadeus@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 812-8419-9975</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>DKI Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Professional Summary</h2>
+                <p style="text-align: justify;">Passionate computer science student specializing in Network Technology with a strong foundation in algorithms, data structures, and object-oriented programming. Experienced in Linux system administration, network programming with Golang, and cybersecurity practices. Seeking opportunities to apply technical skills in building robust and secure digital infrastructure.</p>
+            </div>
+
+            <div class="cv-section">
+                <h2>Education</h2>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Science</h3>
+                    <h4>Binus University</h4>
+                    <div class="timeline-date">2023 - Present</div>
+                    <p><strong>GPA:</strong> 3.31/4.0</p>
+                    <p><strong>Specialization:</strong> Network Technology</p>
+                    <p><strong>Relevant Coursework:</strong> Data Structures, Operating Systems, Object-Oriented Programming, Computer Networks, Network Design, Linux System Administration and Security</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Technical Skills</h2>
+                <div class="skill-tags" style="margin-bottom: 1rem;">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Golang</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Network Programming</span>
+                    <span class="skill-tag">Cisco Packet Tracer</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Projects & Experience</h2>
+                
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>Software Engineering Education Platform</h3>
+                    <div class="timeline-date">2025</div>
+                    <p style="text-align: justify;">Contributed to software requirements definition and feature identification for a learning management system. Facilitated team discussions to establish core features and project direction.</p>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>Linux Administration & Security Project</h3>
+                    <div class="timeline-date">2025</div>
+                    <p style="text-align: justify;">Gained hands-on experience with Ubuntu, Kali, and Rocky Linux. Performed system configuration, firewall management, user access control, and penetration testing assessments.</p>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>Network Programming with Golang</h3>
+                    <div class="timeline-date">2025</div>
+                    <p style="text-align: justify;">Developed foundational network components including server, client, and proxy functions for data transmission and routing using Go programming language.</p>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>Cisco Network Design Project</h3>
+                    <div class="timeline-date">2024</div>
+                    <p style="text-align: justify;">Designed multi-floor campus network topology with IP addressing, subnetting, and device configuration using Cisco Packet Tracer. Responsible for network path mapping and scalability planning.</p>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>Algorithms & Data Structures Implementation</h3>
+                    <div class="timeline-date">2023</div>
+                    <p style="text-align: justify;">Implemented fundamental data structures (arrays, stacks, queues, hash tables) and algorithms in C++. Focused on clean, efficient code and problem-solving methodologies.</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Links</h2>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/ryanthadeus/" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/ryanthadeus" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="index.html#portfolio" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> Back to Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Print functionality
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
