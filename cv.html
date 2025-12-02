@@ -32,8 +32,19 @@
             left: 2rem;
             z-index: 1000;
         }
+        #downloadBtn {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        #downloadBtn:hover {
+            transform: scale(1.05);
+        }
+        #downloadBtn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
         @media print {
-            .back-btn, .navbar { display: none; }
+            .back-btn, .navbar, #downloadBtn { display: none; }
             .cv-container { margin-top: 0; }
         }
     </style>
@@ -61,7 +72,12 @@
         <div class="glass-card">
             <div class="cv-header">
                 <h1>Ryan Thadeus</h1>
-                <p class="hero-subtitle ">Computer Science Student</p>
+                <p class="hero-subtitle">Computer Science Student | Network Technology Specialist</p>
+                
+                <button id="downloadBtn" class="btn btn-primary" style="margin-top: 1rem;">
+                    <i class="fas fa-download"></i> Download CV as PDF
+                </button>
+                
                 <div class="contact-details" style="justify-content: center; gap: 2rem; margin-top: 1rem;">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -81,71 +97,119 @@
             <div class="cv-section">
                 <h2>Professional Summary</h2>
                 <p style="text-align: justify;">
-                    Passionate computer science student specializing in Network Technology with a foundation in algorithms, 
-                    data structures, and object-oriented programming. 
-                    Experienced in Linux system administration, network programming with Golang, and cybersecurity practices. 
-                    Seeking opportunities to apply technical skills in building and securing digital infrastructure.</p>
+                    Passionate Computer Science student specializing in Network Technology with a solid foundation in algorithms, data structures, and object-oriented programming. Experienced in Linux system administration, network programming with Golang, and cybersecurity practices. Seeking opportunities to apply technical skills in building, optimizing, and securing robust digital infrastructures.</p>
             </div>
 
             <div class="cv-section">
                 <h2>Education</h2>
                 <div class="timeline-content">
-                    <h3>Bachelor of Computer Science</h3>
-                    <h4>Binus University</h4>
+                    <h3>Binus University</h3>
                     <div class="timeline-date">2023 - Present</div>
-                    <p><strong>GPA:</strong> 3.31/4.0</p>
-                    <p><strong>Specialization:</strong> Network Technology</p>
+                    <p><strong>Bachelor of Computer Science</strong> (Specialization in Network Technology)</p>
+                    <p><strong>GPA:</strong> 3.31 / 4.00</p>
                     <p><strong>Relevant Coursework:</strong> Data Structures, Operating Systems, Object-Oriented Programming, Computer Networks, Network Design, Linux System Administration and Security</p>
                 </div>
             </div>
 
             <div class="cv-section">
                 <h2>Technical Skills</h2>
-                <div class="skill-tags" style="margin-bottom: 1rem;">
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">Golang</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">Network Programming</span>
-                    <span class="skill-tag">Cisco Packet Tracer</span>
-                    <span class="skill-tag">Cybersecurity</span>
-                </div>
+                <p><strong>Networking:</strong> Cisco Packet Tracer, Network Topology Design, VLAN Configuration, Static & Dynamic Routing, Network Monitoring & Documentation</p>
+                <p><strong>Linux & System Administration:</strong> Ubuntu Server Management, Firewall Configuration, Service Management, File & Disk Encryption, User Access Control, Log Analysis</p>
+                <p><strong>Virtualization & Cloud:</strong> VMware, VirtualBox, Cloud Fundamentals</p>
+                <p><strong>Server & Infrastructure:</strong> SSH Configuration, Backup & Remote Access Management</p>
+                <p><strong>Programming & Scripting:</strong> C/C++, Python, Go, SQL, HTML/CSS, Java</p>
+                <p><strong>Developer Tools & Workflow:</strong> Git, VS Code, Visual Studio, Eclipse, Agile/Scrum Methodologies</p>
+                <p><strong>Soft Skills:</strong> Leadership, Collaboration, Technical Documentation, Adaptability, Real-Time Problem Solving</p>
             </div>
 
             <div class="cv-section">
                 <h2>Projects & Experience</h2>
                 
                 <div class="timeline-content" style="margin-bottom: 1.5rem;">
-                    <h3>Software Engineering Education Platform</h3>
+                    <h3>OnlySmart - Education Platform</h3>
                     <div class="timeline-date">2025</div>
-                    <p style="text-align: justify;">Contributed to software requirements definition and feature identification for a learning management system. Facilitated team discussions to establish core features and project direction.</p>
+                    <p><strong>Contributor</strong></p>
+                    <ul style="text-align: justify;">
+                        <li>Contributed to software requirements definition for "OnlySmart," a platform designed to connect students with honorary teachers via learning forums and online classes.</li>
+                        <li>Facilitated strategic team discussions to establish core functionalities and align project direction with user needs.</li>
+                    </ul>
                 </div>
 
                 <div class="timeline-content" style="margin-bottom: 1.5rem;">
                     <h3>Linux Administration & Security Project</h3>
                     <div class="timeline-date">2025</div>
-                    <p style="text-align: justify;">Gained hands-on experience with Ubuntu, Kali, and Rocky Linux. Performed system configuration, firewall management, user access control, and penetration testing assessments.</p>
+                    <p><strong>System Administrator</strong></p>
+                    <ul style="text-align: justify;">
+                        <li>Administered system security on Ubuntu and Rocky Linux by managing users, groups, firewalls, and implementing strict access control policies.</li>
+                        <li>Conducted Red Team and Blue Team simulations using Kali Linux to understand both offensive and defensive cybersecurity strategies.</li>
+                        <li>Utilized network analysis tools such as Wireshark for packet inspection and Nmap for network reconnaissance and IP discovery.</li>
+                    </ul>
                 </div>
 
                 <div class="timeline-content" style="margin-bottom: 1.5rem;">
                     <h3>Network Programming with Golang</h3>
                     <div class="timeline-date">2025</div>
-                    <p style="text-align: justify;">Developed foundational network components including server, client, and proxy functions for data transmission and routing using Go programming language.</p>
+                    <p><strong>Developer</strong></p>
+                    <ul style="text-align: justify;">
+                        <li>Developed foundational network components including server, client, and proxy functions.</li>
+                        <li>Implemented efficient data transmission and routing protocols using the Go programming language.</li>
+                    </ul>
                 </div>
 
                 <div class="timeline-content" style="margin-bottom: 1.5rem;">
-                    <h3>Cisco Network Design Project</h3>
+                    <h3>Cisco Enterprise Network Design Case Study</h3>
                     <div class="timeline-date">2024</div>
-                    <p style="text-align: justify;">Designed multi-floor campus network topology with IP addressing, subnetting, and device configuration using Cisco Packet Tracer. Responsible for network path mapping and scalability planning.</p>
+                    <p><strong>Network Designer</strong></p>
+                    <ul style="text-align: justify;">
+                        <li>Designed a scalable network infrastructure for a corporate case study occupying 3 floors within the Binus building complex.</li>
+                        <li>Architected a comprehensive topology connecting servers, routers, and switches to support a high-density environment of approximately 20 rooms per floor with 30 PCs per room.</li>
+                    </ul>
                 </div>
 
                 <div class="timeline-content" style="margin-bottom: 1.5rem;">
                     <h3>Algorithms & Data Structures Implementation</h3>
                     <div class="timeline-date">2023</div>
-                    <p style="text-align: justify;">Implemented fundamental data structures (arrays, stacks, queues, hash tables) and algorithms in C++. Focused on clean, efficient code and problem-solving methodologies.</p>
+                    <p><strong>Developer</strong></p>
+                    <ul style="text-align: justify;">
+                        <li>Implemented fundamental data structures (arrays, stacks, queues, hash tables) and complex algorithms using C++.</li>
+                        <li>Focused on writing clean, efficient, and optimized code while applying rigorous problem-solving methodologies.</li>
+                    </ul>
                 </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Organizational Experience</h2>
+                
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>HIMTI Anniversary 2025</h3>
+                    <div class="timeline-date">Jul 2025 – Oct 2025</div>
+                    <p><strong>Coordinator of PTK Division (Equipment, Technical & Logistics)</strong> | Jakarta, Indonesia</p>
+                    <ul style="text-align: justify;">
+                        <li>Technical & Stage Support: Set up and handled sound systems, lighting configurations, and FOH (Front of House) stage settings to ensure optimal audiovisual performance.</li>
+                        <li>Talent & Stage Management: Acted as PIC for talents/bands and Soundman, managing real-time transitions and audiovisual integration during performances.</li>
+                        <li>Logistics & Layout: Managed venue layout, game areas, and consumption logistics. Assisted in setting up decorations for the photobooth and main event areas.</li>
+                        <li>Crowd Control & Safety: Implemented crowd control measures and defined restricted areas to ensure event safety and smooth flow.</li>
+                        <li>Coordinated live broadcasts via Zoom, ensuring network stability and audio-visual synchronization for online audiences.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 1.5rem;">
+                    <h3>HISHOT (HIMTI Seminar, Workshop, and Study Tour)</h3>
+                    <div class="timeline-date">2025 – 2026</div>
+                    <p><strong>Promotion Division Member</strong> | Jakarta, Indonesia</p>
+                    <ul style="text-align: justify;">
+                        <li>Served as the talent for promotional videos on TikTok and Instagram Reels, driving engagement for seminars, workshops, and study tours.</li>
+                        <li>Documented and promoted the Domestic Study Tour visit to Garena, creating content to showcase industry insights and company culture.</li>
+                        <li>Collaborated with the creative team to brainstorm and execute content ideas, ensuring consistent and attractive branding.</li>
+                        <li>Conducted real-time event coverage via Instagram Stories (Live Report) to maintain high audience engagement during the event.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Languages</h2>
+                <p><strong>Indonesian:</strong> Fluent</p>
+                <p><strong>English:</strong> Intermediate</p>
             </div>
 
             <div class="cv-section">
@@ -163,6 +227,16 @@
     </main>
 
     <script>
+        // Download CV PDF file
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'cv.pdf';
+            link.download = 'Ryan_Thadeus_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
         // Print functionality
         document.addEventListener('keydown', function(e) {
             if (e.ctrlKey && e.key === 'p') {
