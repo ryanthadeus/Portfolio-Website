@@ -74,9 +74,11 @@
                 <h1>Ryan Thadeus</h1>
                 <p class="hero-subtitle">Computer Science Student | Network Technology Specialist</p>
                 
-                <button id="downloadBtn" class="btn btn-primary" style="margin-top: 1rem;">
-                    <i class="fas fa-download"></i> Download CV as PDF
-                </button>
+                <a href="cv.pdf" download="Ryan_Thadeus_CV.pdf" aria-label="Download CV" style="margin-top: 1rem; display: inline-block;">
+                    <button class="btn btn-primary" style="cursor: pointer;">
+                        <i class="fas fa-file-pdf"></i> Download CV as PDF
+                    </button>
+                </a>
                 
                 <div class="contact-details" style="justify-content: center; gap: 2rem; margin-top: 1rem;">
                     <div class="contact-item">
@@ -227,16 +229,6 @@
     </main>
 
     <script>
-        // Download CV PDF file
-        document.getElementById('downloadBtn').addEventListener('click', function() {
-            const link = document.createElement('a');
-            link.href = 'cv.pdf';
-            link.download = 'Ryan_Thadeus_CV.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-
         // Print functionality
         document.addEventListener('keydown', function(e) {
             if (e.ctrlKey && e.key === 'p') {
